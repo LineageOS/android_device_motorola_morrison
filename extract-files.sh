@@ -18,7 +18,7 @@ DEVICE=morrison
 
 mkdir -p ../../../vendor/motorola/$DEVICE/proprietary
 adb pull /system/lib/libaudioeq.so ../../../vendor/motorola/$DEVICE/proprietary
-adb pull /system/lib/libcamera.so ../../../vendor/motorola/$DEVICE/proprietary
+#adb pull /system/lib/libcamera.so ../../../vendor/motorola/$DEVICE/proprietary
 adb pull /system/lib/libmmcamera.so ../../../vendor/motorola/$DEVICE/proprietary
 adb pull /system/lib/libmm-qcamera-tgt.so ../../../vendor/motorola/$DEVICE/proprietary
 adb pull /system/lib/libhpprop.so ../../../vendor/motorola/$DEVICE/proprietary
@@ -122,7 +122,7 @@ adb pull /system/etc/bt_init.config ../../../vendor/motorola/$DEVICE/proprietary
 # Prebuilt libraries that are needed to build open-source libraries
 PRODUCT_COPY_FILES := \\
     vendor/motorola/__DEVICE__/proprietary/libloc_api.so:obj/lib/libloc_api.so \\
-    vendor/motorola/__DEVICE__/proprietary/libcamera.so:obj/lib/libcamera.so \\
+    device/motorola/morrisonj/libcamera.so:obj/lib/libcamera.so \\
     vendor/motorola/__DEVICE__/proprietary/libril-qc-1.so:obj/lib/libril-qc-1.so
 
 # All the blobs necessary for passion
@@ -131,7 +131,7 @@ PRODUCT_COPY_FILES += \\
     vendor/motorola/__DEVICE__/proprietary/libmm-qcamera-tgt.so:/system/lib/libmm-qcamera-tgt.so \\
     vendor/motorola/__DEVICE__/proprietary/libmmjpeg.so:/system/lib/libmmjpeg.so \\
     vendor/motorola/__DEVICE__/proprietary/libhpprop.so:/system/lib/libhpprop.so \\
-    vendor/motorola/__DEVICE__/proprietary/libcamera.so:/system/lib/libcamera.so \\
+    device/motorola/morrison/libcamera.so:/system/lib/libcamera.so \\
     vendor/motorola/__DEVICE__/proprietary/libcm.so:/system/lib/libcm.so \\
     vendor/motorola/__DEVICE__/proprietary/libdsm.so:/system/lib/libdsm.so \\
     vendor/motorola/__DEVICE__/proprietary/libdss.so:/system/lib/libdss.so \\
