@@ -29,6 +29,16 @@ on boot
 # Speed up SDCard
     write /sys/block/mmcblk0/bdi/read_ahead_kb 2048
 
+# Camera    
+    mkdir /dev/msm_camera 0666 system system
+    symlink /dev/msm_camera0 /dev/msm_camera/camera0
+    chmod 0666 /dev/msm_camera/camera0
+    chmod 0666 /dev/msm_camera0
+    chown system system /dev/msm_camera/camera0
+    chown system system /dev/msm_camera0
+    mkdir /cache/tmp 0666 system system
+    mount tmpfs tmpfs /cache/tmp
+
 # Vibrator
     chown system system /sys/class/vibrator/vibrator/enable
 
