@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAAHX//9tc\u003d",
+        "filename": "init.morrison.rc",
+        "patchSetId": 1
+      },
+      "lineNbr": 32,
+      "author": {
+        "id": 431
+      },
+      "writtenOn": "2011-07-23T04:10:51Z",
+      "side": 1,
+      "message": "Ugly big red whitespace on there :)",
+      "revId": "001989978e9c3ae82c748244eb1d3655bef64b58",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAHX//9tU\u003d",
+        "filename": "init.morrison.rc",
+        "patchSetId": 1
+      },
+      "lineNbr": 40,
+      "author": {
+        "id": 431
+      },
+      "writtenOn": "2011-07-23T04:10:51Z",
+      "side": 1,
+      "message": "Probably 33-38 aren\u0027t needed at all. I need to clean up zeppelin one of these days\n\n39 \u0026 40 should do the trick.",
+      "revId": "001989978e9c3ae82c748244eb1d3655bef64b58",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
