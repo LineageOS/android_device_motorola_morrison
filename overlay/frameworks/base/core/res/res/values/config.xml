@@ -257,10 +257,10 @@
          than the size of the config_autoBrightnessLevels array.
          This must be overridden in platform specific overlays -->
     <integer-array name="config_autoBrightnessLcdBacklightValues">
+        <item>16</item>
         <item>50</item>
-        <item>50</item>
-        <item>50</item>
-        <item>50</item>
+        <item>70</item>
+        <item>240</item>
     </integer-array>
 
     <!-- Array of output values for button backlight corresponding to the LUX values
@@ -336,4 +336,7 @@
     <integer name="config_datause_notification_type">2</integer>
     <bool name="config_animateScreenLights">false</bool>
     <bool name="config_rilNeedsNullPath">true</bool>
+    <!-- Disable the screen-on/off animations -->
+    <bool name="config_enableScreenOnAnimation">false</bool>
+    <bool name="config_enableScreenOffAnimation">false</bool>
 </resources>
